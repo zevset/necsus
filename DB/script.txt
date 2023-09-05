@@ -1,0 +1,14 @@
+CREATE TABLE CLIENTS (
+ID_CLIENT int not null, 
+NAME VARCHAR(200) not null, 
+EMAIL VARCHAR(200) not null,
+CONSTRAINT client_pk PRIMARY KEY(ID_CLIENT)
+);
+
+create sequence sec_clients
+ start with 1
+ increment by 1
+ maxvalue 99999
+ minvalue 1;
+
+select * from  CLIENTS;
